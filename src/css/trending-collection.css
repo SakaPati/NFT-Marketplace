@@ -1,0 +1,43 @@
+.trending {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.trending__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+.trending__info {
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.trending__collecton {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.trending__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.938rem;
+  height: 5.94rem;
+  font-family: var(--font-family);
+  font-weight: 700;
+  border-radius: 1.25rem;
+  background: var(--call-to-action);
+}
+.collection__title {
+  font-weight: 600;
+  font-size: 1.38rem;
+  line-height: 1.4;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.container__author {
+  display: flex;
+}
+.trending__author {
+  margin-left: 12px;
+}

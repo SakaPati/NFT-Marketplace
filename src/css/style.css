@@ -1,18 +1,41 @@
 @import url('./reset.css');
 
-
 @import url('./header.css');
 @import url('./hero-section.css');
+@import url('./trending-collection.css');
+@import url('./creators.css');
+@import url('./categories.css');
 
-body{
-  background-color: #2b2b2b;
-  color: white;
-  font-family: "Work Sans";
+:root {
+  --font-family: 'Space Mono', sans-serif;
+  --second-family: 'Work Sans', sans-serif;
+  --background---secondary: #3b3b3b;
+  --caption-label-text: #858584;
+  --text: #fff;
+  --call-to-action: #a259ff;
+  --blue-accent: #377df7;
+  --red-accent: #ff7262;
 }
 
-.container{
+body {
+  background-color: #2b2b2b;
+  color: white;
+  font-family: 'Work Sans';
+}
+
+.container {
   width: 375px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+.title {
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.4;
+}
+.info {
+  line-height: 1.4;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
