@@ -5,6 +5,8 @@
 @import url('./trending-collection.css');
 @import url('./creators.css');
 @import url('./categories.css');
+@import url('./discover.css');
+@import url('./mashrooms.css');
 
 :root {
   --font-family: 'Space Mono', sans-serif;

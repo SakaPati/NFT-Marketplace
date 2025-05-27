@@ -1,0 +1,70 @@
+.mushrooms {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-image: url(../images/mashroom.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mashrooms__author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.25rem;
+  padding: 0.62rem 1.25rem;
+  width: 9.44rem;
+  height: 2.75rem;
+  margin-bottom: 30px;
+  background: var(--background---secondary);
+}
+.mashrooms__author-name {
+  margin-left: 12px;
+  line-height: 1.4;
+}
+.mashrooms__title {
+  font-weight: 600;
+  font-size: 2.38rem;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.mashrooms__sale {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 1.25rem;
+  padding: 1.88rem;
+  width: 19.69rem;
+  height: 9.19rem;
+  backdrop-filter: blur(10px);
+  background: rgba(59, 59, 59, 0.5);
+}
+.mashrooms__sale-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.mashrooms__sale-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mashrooms__sale-time {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 2.38rem;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--text);
+}
+.part {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 30px;
+}
+.mashrooms__btn {
+}
+.discover__btn-icon {
+}
