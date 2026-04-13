@@ -1,16 +1,15 @@
-import { defineConfig } from 'vite';
-import glob from "glob";
-import injectHTML from 'vite-plugin-html-inject';
-import FullReload from 'vite-plugin-full-reload';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
+// https://vite.dev/config/
 export default defineConfig({
-  root: 'src',
-  base: '/NFT-Marketplace/',
-  build: {
-    rollupOptions: {
-      input: glob.sync('./src/*.html'),
+  plugins: [react(), svgr(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
-    outDir: '../dist',
   },
-  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
 });
