@@ -9,10 +9,11 @@ import { Mashrooms } from "./components/Mashrooms";
 import { Treding } from "./components/Trending";
 import { WeeklyDigest } from "./components/WeeklyDigest";
 import { Works } from "./components/Works";
+import { Container } from "./components/Container";
 
 function App() {
   return (
-    <>
+    <Container>
       <Header />
       <Main>
         <HeroSection />
@@ -25,7 +26,7 @@ function App() {
         <WeeklyDigest />
       </Main>
       <Footer />
-    </>
+    </Container>
   );
 }
 

@@ -15,6 +15,7 @@ import TwitterLogo from "./TwitterLogo.svg?react";
 import VideoCamera from "./VideoCamera.svg?react";
 import YoutubeLogo from "./YoutubeLogo.svg?react";
 import Email from "./Email.svg?react";
+import NFTMarketplace from "./NFTMarketplace.svg?react";
 
 export {
   Basketball,
@@ -34,4 +35,5 @@ export {
   VideoCamera,
   YoutubeLogo,
   Email,
+  NFTMarketplace,
 };

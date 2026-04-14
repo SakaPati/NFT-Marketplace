@@ -38,7 +38,7 @@ export const Categories = () => {
           const Icon = icon;
 
           return (
-            <li key={nanoid()} className="bg-[var(--background---secondary)]">
+            <li key={nanoid()} className="bg-(--background---secondary)">
               <img src={img} alt={text} className="blur-[15px]" />
               <Icon />
               <p>{text}</p>

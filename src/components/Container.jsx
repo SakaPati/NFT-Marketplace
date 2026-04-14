@@ -1,3 +1,3 @@
-export const Container = () => { 
-    
-}
+export const Container = ({ children }) => {
+  return <div className="container">{children}</div>;
+};

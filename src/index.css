@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 834px;
+  --breakpoint-lg: 1280px;
+  --font-space: "Space Mono", sans-serif;
+  --font-work: "Work Sans", sans-serif;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 30px; 
+  width: 100%;
+
+  @media (width >= 834px) {
+    max-width: 834px;
+    padding-inline: 50px;
+  }
+
+  @media (width >= 1280px) {
+    max-width: 1280px;
+    padding-inline: 50px;
+  }
+}
+
+
 :root {
   --background: #2b2b2b;
   --background---secondary: #3b3b3b;
@@ -8,6 +33,9 @@
   --call-to-action: #a259ff;
   --blue-accent: #377df7;
   --red-accent: #ff7262;
+
+  --font-family: "Space Mono", sans-serif;
+  --second-family: "Work Sans", sans-serif;
 }
 
 body {
