@@ -11,7 +11,7 @@ const stats = [
 
 export const HeroSection = () => {
   return (
-    <section className="my-10">
+    <section>
       <h1 className="font-work font-semibold text-[28px]/[1.4] mb-2.5 capitalize">
         Discover digital art & Collect NFTs
       </h1>

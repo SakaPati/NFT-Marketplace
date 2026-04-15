@@ -12,21 +12,31 @@ const creators = [
 export const Creators = () => {
   return (
     <section>
-      <h2>Top creators</h2>
-      <p>Checkout Top Rated Creators on the NFT Marketplace</p>
-      <ul>
+      <h2 className="font-work font-semibold text-[28px]/[1.4] capitalize">Top creators</h2>
+      <p className="font-work font-normal text-[16px]/[1.4]">
+        Checkout Top Rated Creators on the NFT Marketplace
+      </p>
+      <ul className="flex flex-col gap-y-5 my-10">
         {creators.map(({ img, name, sales }, i) => (
-          <li key={nanoid()}>
-            <div>{i + 1}</div>
+          <li key={nanoid()} className="flex rounded-[20px] bg-(--background---secondary) p-5 relative">
+            <div className="absolute top-3 left-3 bg-(--background) rounded-[20px] w-7.5 h-7.5 flex justify-center items-center font-space font-normal text-[16px]/[1.4] text-(--caption-label-text)">
+              {i + 1}
+            </div>
             <img src={img} alt={name} />
-            <p>
-              <span>Total Sales:</span> {sales} ETH
-            </p>
+            <div className="pl-5">
+              <h2 className="font-work font-semibold text-[22px]/[1.4] capitalize">{name}</h2>
+              <p className="font-space font-normal text-[16px]/[1.4]">
+                <span className="font-work font-normal text-[16px]/[1.4] text-(--caption-label-text)">
+                  Total Sales:
+                </span>{" "}
+                {sales} ETH
+              </p>
+            </div>
           </li>
         ))}
       </ul>
-      <button className="rounded-[20px] border-2 border-solid border-[var(--call-to-action)] w-79 h-15 flex justify-center items-center">
-        <Rocket className="fill-[#A259FF] w-[20px] h-[20px] mr-3" />
+      <button className="rounded-[20px] border-2 border-solid border-(--call-to-action) w-79 h-15 flex justify-center items-center">
+        <Rocket className="fill-[#A259FF] w-5 h-5 mr-3" />
         View Rankings
       </button>
     </section>

@@ -32,16 +32,18 @@ const categories = [
 export const Categories = () => {
   return (
     <section>
-      <h2>Browse Categories</h2>
-      <ul>
+      <h2 className="font-work font-semibold text-[28px]/[1.4] capitalize">Browse Categories</h2>
+      <ul className="flex flex-wrap gap-5">
         {categories.map(({ img, icon, text }) => {
           const Icon = icon;
 
           return (
-            <li key={nanoid()} className="bg-(--background---secondary)">
-              <img src={img} alt={text} className="blur-[15px]" />
-              <Icon />
-              <p>{text}</p>
+            <li key={nanoid()} className="bg-(--background---secondary) rounded-[20px] w-36.75 relative">
+              <div className="overflow-hidden rounded-t-[20px]">
+                <img src={img} alt={text} className="blur-[15px]" />
+              </div>
+              <Icon className="absolute top-8 left-8" />
+              <p className="font-work font-semibold text-[16px]/[1.4] pt-5 px-5 pb-6.25">{text}</p>
             </li>
           );
         })}

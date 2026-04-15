@@ -25,12 +25,14 @@ export const Works = () => {
       <h2>How it works</h2>
       <p>Find out how to get started</p>
 
-      <ul>
+      <ul className="flex flex-col gap-y-5">
         {works.map(({ img, text, desc }) => (
-          <li key={nanoid()} className="bg-[var(--background---secondary)]">
-            <img src={img} alt={text} />
-            <h3>{text}</h3>
-            <p>{desc}</p>
+          <li key={nanoid()} className="flex rounded-[20px] bg-(--background---secondary) p-5 w-78.75 h-39.25">
+            <img src={img} alt={text} className="w-42.25 h-42.25" />
+            <div>
+              <h3 className="font-work font-semibold text-[16px]/[1.4] mb-2.5">{text}</h3>
+              <p className="font-work font-normal text-[12px]/[1.4]">{desc}</p>
+            </div>
           </li>
         ))}
       </ul>
