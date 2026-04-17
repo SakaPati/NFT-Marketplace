@@ -13,7 +13,7 @@ import { Container } from "./components/Container";
 
 function App() {
   return (
-    <Container>
+    <>
       <Header />
       <Main>
         <HeroSection />
@@ -26,7 +26,7 @@ function App() {
         <WeeklyDigest />
       </Main>
       <Footer />
-    </Container>
+    </>
   );
 }
 

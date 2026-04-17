@@ -24,6 +24,33 @@
   }
 }
 
+.title {
+  @apply font-work font-semibold capitalize;
+}
+
+.text-xs {
+  @apply text-[12px]/[1.1];
+}
+
+.text-sm {
+  @apply text-[16px]/[1.4];
+}
+
+.text-md {
+  @apply text-[22px]/[1.4];
+}
+
+.text-lg {
+  @apply text-[28px]/[1.4];
+}
+
+.text-xl {
+  @apply text-[38px]/[1.2];
+}
+
+.center {
+  @apply flex justify-center items-center;
+}
 
 :root {
   --background: #2b2b2b;

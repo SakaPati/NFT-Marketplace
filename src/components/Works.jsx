@@ -1,5 +1,6 @@
 import { wallet, collection, earning } from "@/assets";
 import { nanoid } from "nanoid";
+import { Container } from "./Container";
 
 const works = [
   {
@@ -22,20 +23,22 @@ const works = [
 export const Works = () => {
   return (
     <section>
-      <h2>How it works</h2>
-      <p>Find out how to get started</p>
+      <Container>
+        <h2 className="title text-lg">How it works</h2>
+        <p className="font-work font-normal text-sm">Find out how to get started</p>
 
-      <ul className="flex flex-col gap-y-5">
-        {works.map(({ img, text, desc }) => (
-          <li key={nanoid()} className="flex rounded-[20px] bg-(--background---secondary) p-5 w-78.75 h-39.25">
-            <img src={img} alt={text} className="w-42.25 h-42.25" />
-            <div>
-              <h3 className="font-work font-semibold text-[16px]/[1.4] mb-2.5">{text}</h3>
-              <p className="font-work font-normal text-[12px]/[1.4]">{desc}</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+        <ul className="flex flex-col gap-y-5 mt-10">
+          {works.map(({ img, text, desc }) => (
+            <li key={nanoid()} className="flex rounded-[20px] bg-(--background---secondary) p-5 w-78.75 h-39.25">
+              <img src={img} alt={text} className="w-full h-full object-cover scale-[1.5]" />
+              <div>
+                <h3 className="title text-sm mb-2.5">{text}</h3>
+                <p className="font-work font-normal text-[12px]/[1.4]">{desc}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </Container>
     </section>
   );
 };
